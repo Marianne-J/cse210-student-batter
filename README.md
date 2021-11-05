@@ -40,3 +40,4 @@ root                    (project root folder)
 ## Authors
 ---
 * Marianne Johnson - joh20041@byui.edu
+* Kenyon Jones - jon20019@byui.edu
