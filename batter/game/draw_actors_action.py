@@ -6,7 +6,6 @@ class DrawActorsAction:
     
     Stereotype:
         Service Provider
-
     Attributes:
         _output_service (OutputService): An instance of OutputService.
     """
@@ -21,7 +20,6 @@ class DrawActorsAction:
     
     def execute(self, cast):
         """uses the output_service attribute to draw the actors on the screen.
-
         Args:
             cast (dict): The game actors {key: tag, value: list}.
         """
