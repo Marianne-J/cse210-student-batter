@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 from game.action import Action
 
 class DrawActorsAction:
@@ -27,4 +25,3 @@ class DrawActorsAction:
         Args:
             cast (dict): The game actors {key: tag, value: list}.
         """
->>>>>>> Stashed changes
