@@ -36,22 +36,28 @@ class MoveActorsAction(Action):
         velocity = actor.get_velocity()
         x1 = position.get_x()
         y1 = position.get_y()
+        x2 = velocity.get_x()
+        y2 = velocity.get_y()
+        '''
+        I commented off this section because it was redundant with handle_collisions behavior, but didnt want to remove the code
+
         if x1 <= 0:
             x1 = 1
-            x2 = - velocity.get_x()
+            x2 = velocity.get_x() * -1
         elif x1 >= constants.MAX_X:
             x1 = constants.MAX_X - 1
-            x2 = - velocity.get_x()
+            x2 = velocity.get_x() * -1
         elif y1 <= 0:
             y1 = 1
-            y2 = - velocity.get_y()
+            y2 = velocity.get_y() * -1
         elif y1 >= constants.MAX_Y:
             y1 = constants.MAX_Y - 1
-            y2 = - velocity.get_y()
+            y2 = velocity.get_y() * -1
         else:
             x2 = velocity.get_x()
             y2 = velocity.get_y()
-        x = 1 + (x1 + x2 - 1) % (constants.MAX_X - 1)
-        y = 1 + (y1 + y2 - 1) % (constants.MAX_Y - 1)
+        '''
+        x = 1 + (x1 + x2 - 1)
+        y = 1 + (y1 + y2 - 1)
         position = Point(x, y)
         actor.set_position(position)
