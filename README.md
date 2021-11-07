@@ -41,3 +41,4 @@ root                    (project root folder)
 ---
 * Marianne Johnson - joh20041@byui.edu
 * Kenyon Jones - jon20019@byui.edu
+* Stephen Sanders - stephen64s@byui.edu
